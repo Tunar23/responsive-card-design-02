@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8;
+    background-color: #f8f8f8;
+}
+
+section {
+
+    margin-block: 50px;
+
+    .section-intro {
+        text-align: center;
+
+        h5 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #ffa62b;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 54px;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 48px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .box {
+
+        box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        
+
+        *{
+            transition: all 0.3s ease;
+        }
+
+        .box-head {
+            position: relative;
+            height: 420px;
+
+            img {
+                height: 100%;
+            }
+
+            ul {
+                position: absolute;
+                bottom: 20px;
+                left: 15px;
+                opacity: 0;
+
+                li{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #363636;
+                    color: #fff;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+
+        .box-foot {
+            text-align: center;
+            padding: 20px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.5;
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            h4 {
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #686565;
+            }
+        }
+
+        &:hover{
+            background-color: #ffa62b;
+            
+    
+            .box-head{
+                ul{
+                    opacity: 1;
+                    cursor: pointer;
+                    
+                    li{
+
+                        &:hover{
+                            background-color: #ffa62b;
+                        }
+                    }
+                }
+
+            }
+
+            .box-foot{
+                h4{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
